@@ -1,0 +1,35 @@
+Redux
+Redux is a library made for managing data, it manages the state of our app. basically is stores data in a central space such that our app can access it from anywhere in our app. we can define redux as a very large object kept inside a central space which contains all the important data for the application. so to give this data a structure, we divides the data into different segments known as slices according to the function they do.
+in our app we are making cart functionality using redux, so now we will understand the data flow of redux.
+1. we will click on add food item
+2. this click dispatches an action which in turn calls a reducer function
+3. this reducer function will modify the slice in redux
+4. after then the data will be updated(Now, the question will arise that how this data will be updated in our UI).
+5. the answer to that is that the data will be updated because it is "subscribed to our store" by using something known as selector.
+https://ibb.co/5j36cFY
+this the data flow in redux(I have made it😶‍🌫️)
+
+
+
+Testing
+-unit Testing
+-integration testing
+-end to end testing(e2e testing)
+
+steps
+    1. i react testing library
+    2. i jest
+    3. i babel(from jest site)
+    4. configure babel.config.js(from jest site)
+    5. our app already has babel, so it  will overwrite the newly created babel config , so configure parcelrc file (from parcel docs)
+    6. npx jest
+    7. npx jest --init(with js dom and babel, no typescript,otherwise yes)
+    8. npm install --save-dev jest-environment-jsdom
+for example made a test case for Sum.js in __test__ folder
+    9.to use all the functions install  
+     npm i -D @testing-library/jest-dom
+        @testing-library/jest-dom is an extension library for the Jest testing framework that provides additional matchers and utilities for asserting DOM-related behaviors in your tests.
+        It enhances the built-in Jest matchers by providing more specific matchers for DOM elements, such as toBeInTheDocument, toHaveTextContent, toHaveAttribute, etc.
+        Using @testing-library/jest-dom can make your tests more expressive and readable by allowing you to write assertions that closely resemble how users interact with your application.
+    10. install babel-preset as jsx will not work without this
+        done the above step for testing contact page(npm install @babel/preset-react --save-dev)
