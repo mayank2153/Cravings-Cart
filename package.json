@@ -1,12 +1,15 @@
 {
+  "homepage": "https://mayank2153.github.io/Cravings-Cart",
   "name": "foodzilla",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html",
     "test": "jest",
-    "build:css": "tailwindcss build src/main.css -o public/main.css --watch"
+    "build:css": "tailwindcss build src/main.css -o public/main.css --watch",
+    "build":"parcel build src/index.html",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
