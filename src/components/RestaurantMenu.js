@@ -18,7 +18,7 @@
                     <Shimmer />
                 ) : (
                     <>  
-                        {console.log(Menu)}
+                        {/* {console.log(Menu)} */}
                         {profile?
                             <div className='profile'>
                                     <div className='profile-info'>

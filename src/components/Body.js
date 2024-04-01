@@ -31,7 +31,8 @@ const Body = () => {
 
   async function requestRestaurants() {
     try {
-      const response = await fetch(`https://www.swiggy.com/dapi/restaurants/list/v5?lat=${latitude}&lng=${longitude}&page_type=DESKTOP_WEB_LISTING`);
+      const response = await fetch(`https://foodfire.onrender.com/api/restaurants?lat=${latitude}&lng=${longitude}&&page_type=DESKTOP_WEB_LISTING`);
+
       const json = await response.json();
       const restaurants = json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
       setCorousel(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info);

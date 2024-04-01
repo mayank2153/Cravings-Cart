@@ -640,7 +640,7 @@ $RefreshReg$(_c, "Instamart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../assets/img/instamart-comingSoon.png":"cpNPN"}],"cpNPN":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../assets/img/instamart-comingSoon.png":"cpNPN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cpNPN":[function(require,module,exports) {
 module.exports = require("8964fd067b78875b").getBundleURL("jkrEb") + "instamart-comingSoon.3df23c33.png" + "?" + Date.now();
 
 },{"8964fd067b78875b":"lgJ39"}]},["wMPDB","1xC6H"], null, "parcelRequire30a3")

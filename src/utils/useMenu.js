@@ -7,12 +7,10 @@ const useMenu = () => {
     useEffect(() => {
         async function callMenu() {
             try {
-                console.log("1")
-                const response = await fetch(`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.65420&lng=77.23730&restaurantId=${id}&catalog_qa=undefined&submitAction=ENTER`);
-                console.log("2")
+                const response = await fetch(`https://foodfire.onrender.com/api/menu?page-type=REGULAR_MENU&complete-menu=true&lat=21.1702401&lng=72.83106070000001&&submitAction=ENTER&restaurantId=${id}`);
+
                 const json = await response.json();
                 setMenu(json?.data);
-                console.log(json)
             } catch (error) {
                 console.error('Error fetching menu:', error);
             }
